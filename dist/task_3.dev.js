@@ -1,11 +1,9 @@
 "use strict";
 
 // функция, которая создает пустой объект, но без прототипа
-function create(obj) {
-  var emptyFunction = {};
-  return obj = emptyFunction;
-} // пустой объект
+function createObjNull() {
+  return Object.create(null);
+}
 
-
-var object = create('obj');
-console.log(object);
+var obj = createObjNull();
+console.log(obj);

@@ -1,10 +1,7 @@
 // функция, которая создает пустой объект, но без прототипа
-function create(obj) {
-	const emptyFunction = {};
-	return obj = emptyFunction;
+function createObjNull() {
+	return Object.create(null);
 }
 
-// пустой объект
-let object = create('obj');
-
-console.log((object));
+const obj = createObjNull();
+console.log(obj);
